@@ -6,16 +6,6 @@
                  [org.jsoup/jsoup "1.11.3"]
                  [com.github.oshi/oshi-core "3.6.0"]
                  [com.googlecode.java-diff-utils/diffutils "1.3.0"]]
-  :aliases {"test" ["run" "-m" "hara.test" "exit"]
-            "publish" ["exec" "-ep" "(use 'hara.tool.publish) (deploy-template :all) (publish :all)"]
-            "deploy"  ["exec" "-ep" "(use 'hara.tool.deploy) (deploy 'hara.core {:repository *caudata-repo*}) (deploy :all {:repository *caudata-repo*})"]}
-  :injections  [(require  '[hara.module.inject :as inject])
-                (inject/in [hara.io.project project]
-                           [hara.module.namespace reset]
-                           [hara.tool.aether pull push]
-
-                           clojure.core
-                           [hara.reflect .& .> .? .* .% .%> .>var .>ns])]
   :profiles {:dev {:dependencies [[org.eclipse.jgit "5.0.1.201806211838-r"]
                                   [joda-time "2.10"]
                                   [org.clojure/core.async "0.4.474"

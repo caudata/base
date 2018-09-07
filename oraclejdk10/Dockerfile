@@ -49,7 +49,6 @@ RUN cd /tmp \
 	$JAVA_HOME/lib/fonts \
 	$JAVA_HOME/lib/oblique-fonts \
 	$JAVA_HOME/jmods \
-    && apt-get remove -y wget \
     && apt-get clean -y \
     && apt-get autoremove -y \
     && apt-get autoclean -y \

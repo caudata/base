@@ -76,5 +76,7 @@ RUN mkdir -p $LEIN_INSTALL \
 ENV PATH=$PATH:$LEIN_INSTALL
 ENV LEIN_ROOT 1
 
+COPY ./project.clj .
 RUN lein deps
+
 RUN npm install -g shadow-cljs

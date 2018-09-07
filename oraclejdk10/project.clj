@@ -49,6 +49,14 @@
                                   [org.scala-lang/scala-library "2.12.6"]
                                   [org.scala-lang/scala-compiler "2.12.6"]
 
+                                  [com.google.zxing/core "3.3.3"]
+                                  [com.google.zxing/javase "3.3.3"
+                                   :exclusions [com.beust/jcommander
+                                                com.github.jai-imageio/jai-imageio-core]]
+                                                
+
+                                  [com.datomic/datomic-free "0.9.5697" :exclusions [com.google.guava/guava]]
+
                                   [org.gdal/gdal "2.3.0"]
                                   [com.github.pcmehlitz/worldwind-pcm "2.1.0.187" :exclusions [org.gdal/gdal]]
                                   [org.jogamp.gluegen/gluegen-rt "2.3.2"]

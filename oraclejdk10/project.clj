@@ -6,6 +6,7 @@
                  [org.jsoup/jsoup "1.11.3"]
                  [com.github.oshi/oshi-core "3.6.0"]
                  [com.googlecode.java-diff-utils/diffutils "1.3.0"]]
+  :repositories {"osgeo" "https://download.osgeo.org/webdav/geotools/"}
   :profiles {:dev {:dependencies [[org.eclipse.jgit "5.0.1.201806211838-r"]
                                   [joda-time "2.10"]
                                   [org.clojure/core.async "0.4.474"

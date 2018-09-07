@@ -1,4 +1,4 @@
-FROM debian:sid-slim
+FROM node:10-slim
 LABEL maintainer="caudata <admin@caudata.io>"
 
 ###### DISCLAIMER ######

@@ -1,3 +1,11 @@
+(require 'cemerick.pomegranate.aether)
+(cemerick.pomegranate.aether/register-wagon-factory!
+ "http"
+ #(proxy [org.apache.maven.wagon.providers.http.HttpWagon] []
+    (get [^String res ^java.io.File f]
+      (println "HTTP Wagon get:" res "from" f)
+      (proxy-super get res f))))
+
 (defproject caudata/base "3.0.1"
   :description "all base libraries for caudata"
   :url "https://gitlab.com/caudata/base"

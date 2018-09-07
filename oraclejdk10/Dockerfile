@@ -77,7 +77,8 @@ ENV PATH=$PATH:$LEIN_INSTALL
 ENV LEIN_ROOT 1
 
 COPY ./project.clj .
+COPY ./shadow-cljs.edn .
 RUN lein deps
-RUN npm install -g shadow-cljs
+RUN npm install -g shadow-cljs yarn
 RUN shadow-cljs test
 

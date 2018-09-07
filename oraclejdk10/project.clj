@@ -20,6 +20,9 @@
                                   [joda-time "2.10"]
                                   [org.clojure/core.async "0.4.474"
                                    :exclusions [org.clojure/tools.reader]]
+
+                                  [binaryage/devtools "0.9.7"]
+                                  [cider/cider-nrepl "0.18.0" :exclude [nrepl/nrepl]]
                                   
                                   [org.eclipse.aether/aether-api "1.1.0"]
                                   [org.eclipse.aether/aether-spi "1.1.0"]
@@ -41,15 +44,27 @@
                                   [org.ow2.asm/asm "6.2"]
                                   [org.bouncycastle/bcprov-jdk15on "1.59"]
                                   [org.bouncycastle/bcpg-jdk15on "1.59"]
-                                  [rewrite-clj/rewrite-clj "0.6.0"]
-                                  [markdown-clj/markdown-clj "1.0.2"]
-                                  [org.clojure/tools.analyzer.jvm "0.7.2"]
                                   [net.bytebuddy/byte-buddy "1.8.12"]
 
+                                  [org.scala-lang/scala-library "2.12.6"]
+                                  [org.scala-lang/scala-compiler "2.12.6"]
+
+                                  [org.gdal/gdal "2.3.0"]
+                                  [com.github.pcmehlitz/worldwind-pcm "2.1.0.187" :exclusions [org.gdal/gdal]]
                                   [org.jogamp.gluegen/gluegen-rt "2.3.2"]
                                   [org.jogamp.gluegen/gluegen-rt-main "2.3.2"]
                                   [org.jogamp.jogl/jogl-all "2.3.2"]
                                   [org.jogamp.jogl/jogl-all-main "2.3.2"]
+  
+                                  [org.geotools/gt-api "19.2"]
+                                  [org.geotools/gt-epsg-hsql "19.2"]
+                                  [org.geotools/gt-geotiff "19.2"]
+                                  [org.geotools/gt-main "19.2"]
+                                  [org.geotools/gt-opengis "19.2"]
+                                  [org.geotools/gt-referencing "19.2"]
+                                  [org.geotools/gt-sample-data "19.2"]
+                                  [org.geotools/gt-shapefile "19.2"]
+                                  
                                   [com.rabbitmq/amqp-client "5.2.0"]
                                   
                                   [com.sun.mail/javax.mail "1.6.1"]

@@ -78,5 +78,6 @@ ENV LEIN_ROOT 1
 
 COPY ./project.clj .
 RUN lein deps
+RUN shadow-cljs test
 
 RUN npm install -g shadow-cljs

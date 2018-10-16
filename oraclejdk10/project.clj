@@ -16,7 +16,7 @@
   [;; dev
    [org.clojure/clojure "1.9.0"]
    
-   ;; hara.string.diff
+   ;; hara.string.diffutils
    [com.googlecode.java-diff-utils/diffutils "1.3.0"]
   
    ;; hara.lib.jsoup

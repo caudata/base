@@ -26,4 +26,4 @@ ENV LEIN_ROOT 1
 
 COPY ./project.clj .
 RUN lein deps
-RUN apt install -y ocl-icd-opencl-dev
+RUN apt update && apt install -y ocl-icd-opencl-dev

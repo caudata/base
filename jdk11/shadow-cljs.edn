@@ -46,19 +46,9 @@
                :main      yin.test/main}}
  
  :jvm-opts 
- #_["-Xmx1g"
-  "-Djava.library.path=/usr/local/Cellar/gdal2/2.3.1/lib:/Applications/MATLAB_R2017b.app/bin/maci64"]
- ["-Xmx1g"
-  "-Djava.library.path=/usr/lib:/usr/lib/system:/usr/local/Cellar/libtiff/4.0.9_4/lib:/usr/local/Cellar/gdal2/2.3.1/lib:/Applications/MATLAB_R2017b.app/bin/maci64:/usr/local/Cellar/opencv/3.4.3/share/OpenCV/java"
+ ["-Xmx1g"   "-Djava.library.path=/usr/lib:/usr/lib/system:/usr/local/Cellar/libtiff/4.0.9_4/lib:/usr/local/Cellar/gdal2/2.3.1/lib:/Applications/MATLAB_R2017b.app/bin/maci64"
   "-Djdk.attach.allowAttachSelf=true"
-  "--add-modules" "javafx.base"
-  "--add-modules" "javafx.controls"
-  "--add-modules" "javafx.fxml"
-  "--add-modules" "javafx.graphics"
-  "--add-modules" "javafx.media"
-  "--add-modules" "javafx.swing"
-  "--add-modules" "javafx.web"
-  "--add-opens"   "java.base/java.lang=ALL-UNNAMED"
+  "--add-opens"  "java.base/java.lang=ALL-UNNAMED"
   "--illegal-access=permit"]
 
  :repositories

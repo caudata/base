@@ -87,9 +87,6 @@
   ;; hara.security.openpgp
   [org.bouncycastle/bcprov-jdk15on "1.60"]
   [org.bouncycastle/bcpg-jdk15on "1.60"]
-
-  ;; hara.publish
-  [markdown-clj/markdown-clj "1.0.2"]
   
   ;; hara.pretty
   [org.clojure/core.rrb-vector "0.0.11"]

@@ -59,9 +59,12 @@ RUN cd /tmp \
 # Add java to path
 ENV PATH $PATH:$JAVA_HOME/bin
 
+COPY ./project.clj .
+RUN lein deps
 RUN apt install -y ocl-icd-opencl-dev
 
-COPY ./shadow-cljs.edn .
-RUN npm install -g shadow-cljs yarn
-RUN shadow-cljs check
+# RUN apt install -y ocl-icd-opencl-dev
+# COPY ./shadow-cljs.edn .
+# RUN npm install -g shadow-cljs yarn
+# RUN shadow-cljs check
 

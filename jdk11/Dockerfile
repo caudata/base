@@ -33,4 +33,4 @@ RUN lein deps
 
 RUN npm install -g shadow-cljs yarn
 COPY ./shadow-cljs.edn .
-RUN shadow-cljs test
+RUN shadow-cljs check

@@ -27,6 +27,10 @@ ENV LEIN_ROOT 1
 # Install clojure 1.9.0 so users don't have to download it every time
 RUN apt update
 RUN apt install -y nodejs npm
+RUN apt install -y ocl-icd-opencl-dev
+COPY ./project.clj .
+RUN lein deps
+
 RUN npm install -g shadow-cljs yarn
 COPY ./shadow-cljs.edn .
 RUN shadow-cljs test
